@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
+module.exports = function(app) {
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Falk.io' });
-});
+  app.get('/', function(req, res) {
+    res.render('index', { title: 'Falk.io' });
+  });
 
-module.exports = router;
+  app.get('/cv', function(req, res) {
+    res.render('cv', { title: 'Håvard - CV' });
+  });
+
+};
