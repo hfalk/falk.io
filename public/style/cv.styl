@@ -1,6 +1,6 @@
 // # CV Header
 // HeaderSize
-headerSize = 600px
+headerSize = 550px
 #cvHeader
   background linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.2) 100%), url('../images/gloshaugen.jpg') repeat 0 0
   text-align center
@@ -15,7 +15,7 @@ headerSize = 600px
 
   #falkPic
     width headerSize * (2/3)
-    margin-top headerSize * (1/6)
+    margin-top headerSize * (1/7)
 
 // Social icons
 #socialLink
@@ -63,4 +63,68 @@ headerSize = 600px
   -moz-border-radius: headerSize * (1/24)
   margin-left 6px
   margin-right 6px
+
+
+// #Navbar
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+    float:none;
+  }
+}
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+
+}
+
+.navbar-nav {
+  margin: 1px 1px;
+}
+.navbar-custom {
+  background-color: #2e2e2e;
+  font-weight:700;
+  text-transform:uppercase;
+  border-width:0;
+  margin-bottom: 0;
+}
+.navbar-custom  .navbar-nav>li>a {
+  color: #ddd;
+}
+.navbar-custom  .dropdown-menu li>a:hover {
+  color: #eee;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+  background-color: #000;
+}
+.navbar-custom .navbar-nav>.dropdown>a .caret {
+  border-top-color: #999;
+  border-bottom-color: #999;
+}
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+  overflow-y: visible;
+}
+.navbar-toggle {
+  outline:0;
+}
+
+//offset navbar
+.offset {
+  padding-top: 50px
+  margin-top: -50px
+}
+
+// #About
+.offsetAbout {
+  padding-top 50px
+}
+
+
 
