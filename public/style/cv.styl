@@ -1,6 +1,19 @@
-// # CV Header
+/* --------- General --------- */
+.section-title
+  padding-bottom: 10px
+
+h4 span
+  position: relative
+
+.right
+  border-left: dashed 1px #897f8a
+  padding-bottom: 50px
+
+/* --------- CV Header --------- */
+
 // HeaderSize
 headerSize = 550px
+
 #cvHeader
   background linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.2) 100%), url('../images/gloshaugen.jpg') repeat 0 0
   text-align center
@@ -17,7 +30,11 @@ headerSize = 550px
     width headerSize * (2/3)
     margin-top headerSize * (1/7)
 
-// Social icons
+body
+  position: relative
+
+
+/* ---------- Social icons --------- */
 #socialLink
   display: inline-block
   margin-top headerSize * (1/24)
@@ -65,66 +82,151 @@ headerSize = 550px
   margin-right 6px
 
 
-// #Navbar
-#nav {
-  width: 100%;
-  position:static;
-  top:-32px;
+/* --------- Navigation --------- */
+#nav
+  background-color: #2e2e2e
+  z-index: 9999
+  width:100%
+  box-sizing:border-box
+  box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1)
+  text-align: center
+  margin: 0 auto
 
-}
+.navbar
+  margin-bottom: 0
 
-@media (min-width: 767px) {
-  .navbar-nav.nav-justified > li{
-    float:none;
-  }
-}
+.navbar-brand
+  font-weight: 700
 
-#nav.affix {
-  position: fixed;
-  top: 0;
+.navbar-brand:focus
+  outline: 0
 
-}
+.navbar-collapse .nav.navbar-bar
+  text-align: center
+  float: none
+  margin: 0 auto
 
-.navbar-nav {
-  margin: 1px 1px;
-}
-.navbar-custom {
-  background-color: #2e2e2e;
-  font-weight:700;
-  text-transform:uppercase;
-  border-width:0;
-  margin-bottom: 0;
-}
-.navbar-custom  .navbar-nav>li>a {
-  color: #ddd;
-}
-.navbar-custom  .dropdown-menu li>a:hover {
-  color: #eee;
-}
-.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
-  background-color: #000;
-}
-.navbar-custom .navbar-nav>.dropdown>a .caret {
-  border-top-color: #999;
-  border-bottom-color: #999;
-}
-.navbar-collapse.in { /*3.0.2 bug workaround*/
-  overflow-y: visible;
-}
-.navbar-toggle {
-  outline:0;
-}
+.navbar-custom ul.nav
+  text-align: center
+  float: none
+  margin: 0 auto
+
+.navbar-custom ul.nav li
+  float: none
+  display: inline-block
+  text-align: center
+
+.navbar-custom ul.nav li a
+  font-size: 14px
+  letter-spacing: 1px
+  color: #ddd
+  text-transform: uppercase
+  font-weight: 700
+
+.navbar-custom .nav li a
+  -webkit-transition: background .3s ease-in-out
+  -moz-transition: background .3s ease-in-out
+  transition: background .3s ease-in-out
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active
+  outline: 0
+  background-color: #000
+
+.navbar-toggle
+  padding: 4px 6px
+  font-size: 14px
+  color: #fff
+
+.navbar-toggle:focus,
+.navbar-toggle:active
+  outline: 0
+
+
+/* Media queries */
+
+@media (max-width:768px)
+  .navbar-header .fa
+    color: #666
+
+  .col-xs-6
+    margin-bottom: 30px
+
+@media (max-width:480px)
+  .navbar-custom .nav.navbar-nav
+    background-color: rgba(255,255,255,.4)
+
+  .navbar.navbar-custom.navbar-fixed-top
+    margin-bottom: 30px
+
+  .page-scroll a
+    width: 40px
+    height: 40px
+    margin-top: 10px
+    font-size: 20px
 
 //offset navbar
-.offset {
+.offset
   padding-top: 50px
-  margin-top: -50px
-}
 
-// #About
-.offsetAbout {
-  padding-top 50px
-}
+/* --------- About --------- */
 
+#about
+  background: #2c3e50
+  padding-top: 60px
+  padding-bottom: 60px
+  color: white
+
+  i
+    color: white
+    font-size: 20px
+    padding-right: 8px
+    vertical-align: middle
+
+  .btn
+    background: #2c3e50
+    color: white
+
+/* --------- Experience --------- */
+
+#experience
+  padding-bottom: 50px
+
+  .arrow
+  margin-left: -26.3px
+  margin-top: 32px
+  float: left
+  width: 22px
+  height: 22px
+  background: url(../images/arrow.png) no-repeat 0 0 white
+
+/* --------- Education --------- */
+
+#education
+  background: #F1F2F7
+  padding-bottom: 50px
+
+  .arrow
+  margin-left: -26.3px
+  margin-top: 32px
+  float: left
+  width: 22px
+  height: 22px
+  background: url(../images/arrow.png) no-repeat 0 0 #F1F2F7
+
+small.ed
+  position: absolute
+  top: -10px
+  left: 0
+  font-size: 12px
+
+/* --------- Frivilige verv --------- */
+
+
+/* --------- Fritidsinteresser --------- */
+
+#fritidsinteresser
+  background: #F1F2F7
 
 
