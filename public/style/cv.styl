@@ -1,4 +1,7 @@
 /* --------- General --------- */
+@import url(https://fonts.googleapis.com/css?family=Raleway)
+@import url(https://fonts.googleapis.com/css?family=Roboto)
+
 .section-title
   padding-bottom: 10px
 
@@ -8,6 +11,7 @@ h4 span
 .right
   border-left: dashed 1px #897f8a
   padding-bottom: 50px
+
 
 /* --------- CV Header --------- */
 
@@ -33,8 +37,19 @@ headerSize = 550px
 body
   position: relative
 
+  p
+    font-family: 'Raleway', sans-serif
+
+  h2
+    font-family: 'Roboto', sans-serif
+
+  h4, h5
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
+
 
 /* ---------- Social icons --------- */
+
 #socialLink
   display: inline-block
   margin-top headerSize * (1/24)
@@ -170,6 +185,7 @@ body
 .offset
   padding-top: 50px
 
+
 /* --------- About --------- */
 
 #about
@@ -188,18 +204,30 @@ body
     background: #2c3e50
     color: white
 
+
 /* --------- Experience --------- */
 
 #experience
   padding-bottom: 50px
+  background: #F1F2F7
 
   .arrow
-  margin-left: -26.3px
-  margin-top: 32px
-  float: left
-  width: 22px
-  height: 22px
-  background: url(../images/arrow.png) no-repeat 0 0 white
+    margin-left: -26.3px
+    margin-top: 32px
+    float: left
+    width: 22px
+    height: 22px
+    background: url(../images/arrow.png) no-repeat 0 0 #F1F2F7
+
+ // For experience, education and frivillige verv
+.description
+  padding-left: 30px
+
+.year
+  text-align: right
+  padding-right: 30px
+  padding-top: 14px
+
 
 /* --------- Education --------- */
 
@@ -208,12 +236,12 @@ body
   padding-bottom: 50px
 
   .arrow
-  margin-left: -26.3px
-  margin-top: 32px
-  float: left
-  width: 22px
-  height: 22px
-  background: url(../images/arrow.png) no-repeat 0 0 #F1F2F7
+    margin-left: -26.3px
+    margin-top: 32px
+    float: left
+    width: 22px
+    height: 22px
+    background: url(../images/arrow.png) no-repeat 0 0 #F1F2F7
 
 small.ed
   position: absolute
@@ -221,12 +249,24 @@ small.ed
   left: 0
   font-size: 12px
 
+
 /* --------- Frivilige verv --------- */
+
+#friviligeverv
+  padding-bottom: 50px
+
+  .arrow
+    margin-left: -26.3px
+    margin-top: 32px
+    float: left
+    width: 22px
+    height: 22px
+    background: url(../images/arrow.png) no-repeat 0 0 #ffffff
 
 
 /* --------- Fritidsinteresser --------- */
 
 #fritidsinteresser
-  background: #F1F2F7
+  padding-bottom: 50px
 
 
