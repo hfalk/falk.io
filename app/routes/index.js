@@ -5,7 +5,7 @@ module.exports = function(app) {
   });
 
   app.get('/cv', function(req, res) {
-    res.render('cv', { title: 'Håvard - CV' });
+    res.render('cv', { title: 'Håvard Falk - CV' });
   });
 
   app.get('/:file(*)', function(req, res, next){
