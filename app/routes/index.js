@@ -1,7 +1,8 @@
 module.exports = function(app) {
 
   app.get('/', function(req, res) {
-    res.render('index', { title: 'Falk.io' });
+    //res.render('index', { title: 'Falk.io' });
+    res.redirect('/cv');
   });
 
   app.get('/cv', function(req, res) {
