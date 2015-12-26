@@ -1,10 +1,9 @@
-var ReactDOM = require('react-dom');
-var React = require('react');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Root from './components/root';
 
-var HelloMessage = React.createClass({
-  render: function () {
-    return <h1>Hello {this.props.message}!</h1>;
-  }
-});
+let div = document.createElement('div');
 
-ReactDOM.render(<HelloMessage message="Word" />, document.getElementById('app'));
+document.body.appendChild(div);
+
+ReactDOM.render(<Root/>, div);
