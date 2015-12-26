@@ -9,6 +9,14 @@ class Root extends React.Component {
     };
   }
 
+  handleChange(e) {
+    const newName = e.target.value();
+
+    this.setState({
+      name: newName
+    });
+  }
+
   render() {
     return (
       <div>
@@ -25,14 +33,6 @@ class Root extends React.Component {
         <p>Hello, {this.state.name} </p>
       </div>
     );
-  }
-
-  handleChange(e) {
-    var newName = e.target.value();
-
-    this.setState({
-      name: newName
-    });
   }
 }
 
